@@ -95,36 +95,8 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Compile Include="..\..\..\..\..\..\..\Francois\Dev\VSprojects\SharedClasses\Logging.cs">
-      <Link>Logging.cs</Link>
-    </Compile>
-    <Compile Include="..\..\..\..\..\..\..\Francois\Dev\VSprojects\SharedClasses\PhpDownloadingInterop.cs">
+    <Compile Include="..\..\SharedClasses\PhpDownloadingInterop.cs">
       <Link>PhpDownloadingInterop.cs</Link>
-    </Compile>
-    <Compile Include="..\..\..\..\..\..\..\Francois\Dev\VSprojects\SharedClasses\SettingsInterop.cs">
-      <Link>SettingsInterop.cs</Link>
-    </Compile>
-    <Compile Include="..\..\..\..\..\..\..\Francois\Dev\VSprojects\SharedClasses\StringExtensions.cs">
-      <Link>StringExtensions.cs</Link>
-    </Compile>
-    <Compile Include="..\..\..\..\..\..\..\Francois\Dev\VSprojects\SharedClasses\UserMessages.cs">
-      <Link>UserMessages.cs</Link>
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="..\..\..\..\..\..\..\Francois\Dev\VSprojects\SharedClasses\UserMessages.designer.cs">
-      <Link>UserMessages.designer.cs</Link>
-      <DependentUpon>UserMessages.cs</DependentUpon>
-    </Compile>
-    <Compile Include="..\..\SharedClasses\MiniIndeterminateProgress.cs">
-      <Link>MiniIndeterminateProgress.cs</Link>
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="..\..\SharedClasses\MiniIndeterminateProgress.designer.cs">
-      <Link>MiniIndeterminateProgress.designer.cs</Link>
-      <DependentUpon>MiniIndeterminateProgress.cs</DependentUpon>
-    </Compile>
-    <Compile Include="..\..\SharedClasses\ThreadingInterop.cs">
-      <Link>ThreadingInterop.cs</Link>
     </Compile>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
@@ -149,14 +121,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <EmbeddedResource Include="..\..\..\..\..\..\..\Francois\Dev\VSprojects\SharedClasses\UserMessages.resx">
-      <Link>UserMessages.resx</Link>
-      <DependentUpon>UserMessages.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="..\..\SharedClasses\MiniIndeterminateProgress.resx">
-      <Link>MiniIndeterminateProgress.resx</Link>
-      <DependentUpon>MiniIndeterminateProgress.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -166,6 +130,12 @@
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
     <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\SharedClasses\_OwnAppsSharedDll\_OwnAppsSharedDll.csproj">
+      <Project>{5aa050a3-9d5f-4fef-9071-bb5d87a7be3f}</Project>
+      <Name>_OwnAppsSharedDll</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

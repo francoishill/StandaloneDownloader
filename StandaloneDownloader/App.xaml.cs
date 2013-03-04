@@ -12,5 +12,6 @@ namespace StandaloneDownloader
 	/// </summary>
 	public partial class App : Application
 	{
+
 	}
 }
